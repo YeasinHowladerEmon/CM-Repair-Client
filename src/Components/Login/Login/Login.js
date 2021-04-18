@@ -1,4 +1,5 @@
 import React, { useContext } from 'react';
+import './Login.css'
 import "firebase/auth";
 import firebase from "firebase/app";
 import firebaseConfig from './firebase.config';
@@ -35,8 +36,10 @@ const Login = () => {
             });
     }
     return (
-        <div>
-            <button className="btn btn-brand" onClick={handleGoogleSignIn}>Google Sign in</button>
+        <div className="container justify-content-center">
+            <div className="login " onClick={handleGoogleSignIn}>
+                <button className="btn btn-warming">Google Sign in</button>
+            </div>
         </div>
     );
 };
