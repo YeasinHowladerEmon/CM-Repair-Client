@@ -7,7 +7,7 @@ const BookList = () => {
     const [loggedInUser, setLoggedInUser] = useContext(UserContext)
 
     useEffect(() => {
-        fetch('http://localhost:5000/bookList?email=' + loggedInUser.email)
+        fetch('https://cryptic-waters-52200.herokuapp.com/bookList?email=' + loggedInUser.email)
             .then(res => res.json())
             .then(data => setBookList(data))
     }, [])

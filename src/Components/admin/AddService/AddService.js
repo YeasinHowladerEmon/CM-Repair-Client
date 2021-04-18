@@ -16,7 +16,7 @@ const AddService = () => {
       imageURL: imageURL
     }
     console.log(data)
-    const url = `http://localhost:5000/addService`
+    const url = `https://cryptic-waters-52200.herokuapp.com/addService`
 
     console.log(serviceData)
     fetch(url, {

@@ -13,7 +13,7 @@ const Booking = () => {
     console.log(id)
     const [serviceId, setServiceId] = useState({})
     useEffect(() => {
-        fetch(`http://localhost:5000/service/${id}`)
+        fetch(`https://cryptic-waters-52200.herokuapp.com/service/${id}`)
             .then(res => res.json())
             .then(data => setServiceId(data[0]))
     }, [id])
@@ -29,7 +29,7 @@ const Booking = () => {
             serviceId,
             paymentId
         };
-        fetch('http://localhost:5000/addBook', {
+        fetch('https://cryptic-waters-52200.herokuapp.com/addBook', {
             method: 'POST',
             headers: {
               'Content-Type': 'application/json'

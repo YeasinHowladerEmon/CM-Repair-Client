@@ -6,7 +6,7 @@ const ManageServices = ({dataManage}) => {
     // console.log({dataManage});
     const deleteService = (id) =>{
         console.log(id)
-        fetch(`http://localhost:5000/deleteService/${id}`, {
+        fetch(`https://cryptic-waters-52200.herokuapp.com/deleteService/${id}`, {
             method: "DELETE",
         })
         .then(res => res.json())

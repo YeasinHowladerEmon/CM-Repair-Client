@@ -6,7 +6,7 @@ const OrderList = () => {
    
 
     useEffect(() => {
-        fetch('http://localhost:5000/orderList')
+        fetch('https://cryptic-waters-52200.herokuapp.com/orderList')
             .then(res => res.json())
             .then(data => setBookList(data))
     }, [])
