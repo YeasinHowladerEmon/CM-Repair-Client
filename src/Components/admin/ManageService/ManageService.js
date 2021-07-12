@@ -12,6 +12,7 @@ const ManageService = () => {
     return (
         <div>
             <ManageServices dataManage={serviceData} />
+            
         </div>
     );
 };
